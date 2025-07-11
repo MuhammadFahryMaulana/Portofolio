@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/portofolio/assets/style.css" />
+    <!-- Boot Straps Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gradient-to-r from-blue-500 to-purple-600">
+    <!-- navbar section start -->
+    <nav
+      class="navbar fixed bg-gradient-to-r from-blue-500 to-purple-600 p-4 w-full flex justify-between items-center z-50"
+    >
+      <div class="logo text-gray-200 text-xl font-bold tracking-widest ml-4">
+        <p>
+          <a href="" class="text-2xl :text-sky-400">Muhammad Fahry Maulana</a>
+        </p>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button
+        id="menu-btn"
+        class="md:hidden text-gray-200 text-2xl focus:outline-none"
+      >
+        ☰
+      </button>
+
+      <div
+        id="menu"
+        class="nav-items hidden md:flex absolute flex-col md:flex-row md:space-x-4 text-gray-200 md:static top-16 right-0 w-full md:w-auto p-4 md:p-0 md:ml-auto"
+      >
+        <ul
+          class="flex flex-col md:flex-row text-gray-200 space-x-4 md:ml-auto"
+        >
+         
+          <li class="relative hover:text-sky-400">
+            <a
+              href="#about"
+              class="pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:border-b-2 after:border-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+              >About</a
+            >
+          </li>
+          <li class="relative hover:text-sky-400">
+            <a
+              href="#stacks"
+              class="pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:border-b-2 after:border-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+              >Tools</a
+            >
+          </li>
+          <li class="relative hover:text-sky-400">
+            <a
+              href="#project"
+              class="pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:border-b-2 after:border-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+              >My Project</a
+            >
+          </li>
+          <li class="relative hover:text-sky-400">
+            <a
+              href="#socials"
+              class="pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:border-b-2 after:border-sky-400 after:transition-all after:duration-300 hover:after:w-full"
+              >Socials</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <!-- hero section start -->
+     <section class="min-h-screen pt-10 flex flex-col items-center justify-center text-center bg-gradient-to-br from-blue-500 to-purple-600">
+     <section class="min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-br from-blue-500 to-purple-600">
+  <!-- Foto Profil Bulat dengan animasi -->
+  <img
+    src="assets/pp.jpg"
+    alt="Profile"
+    class="w-64 h-64 rounded-full shadow-lg animate-bounce-slow transition-transform duration-500 hover:scale-105"
+  />
+
+  <!-- Nama -->
+  <h1 class="text-gray-200 text-4xl font-bold mt-6">
+    Muhammad Fahry Maulana
+  </h1>
+
+<!-- Typing SVG: Dua baris bergantian -->
+<p class="mt-2 max-w-md">
+  <a href="https://git.io/typing-svg">
+    <img
+      src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&center=true&vCenter=true&color=FFFFFF&width=435&lines=UI/UX+Designer;Front+End+Developer"
+      alt="Typing SVG"
+    />
+  </a>
+</p>
+
+
+  <!-- Tombol Download CV -->
+  <a href="assets/Muhammad Fahry Maulana.docx" download class="block mt-6">
+    <button class="bg-blue-700 rounded-lg border-2 border-white p-2 px-6 text-white hover:bg-sky-500 transition-colors duration-300">
+      Download CV
+    </button>
+  </a>
+</section>
+<!-- hero section end -->
+
+
+    <!-- about section start -->
+    <section
+      class="about flex flex-col justify-center items-center pt-44 pb-32 about-animation"
+      id="about"
+    >
+      <h1 class="text-2xl font-bold text-gray-200 mb-10">
+        <i class="bi bi-person-raised-hand"></i> About Me
+      </h1>
+      <div class="flex flex-row text-center max-w-4xl mt-4 text-gray-200 gap-5">
+        <p class="max-w-prose text-center text-xl">
+          Halo! Saya Muhammad Fahry Maulana, mahasiswa Sistem Informasi di Politeknik
+          Negeri Subang yang memiliki minat di bidang UI/UX Design, Front-End Development, 
+          dan dokumentasi teknis sistem, serta merancang antarmuka menggunakan Figma, 
+          mengembangkan halaman web dengan HTML, CSS, dan Laravel, dan membuat dokumentasi teknis
+           seperti flowchart dan diagram UML menggunakan Draw.io dan StarUML.
+      </div>
+      </p>
+    </section>
+    <!-- about section end -->
+
+    <!-- stacks section start -->
+    <section
+      class="stacks pt-40 justify-center items-center stacks-animation"
+      id="stacks"
+    >
+      <h1 class="text-2xl text-center text-gray-200 font-bold">
+        <i class="bi bi-tools"></i> Tools
+      </h1>
+      
+      <div
+        class="stacks-card-container flex justify-center items-center flex-wrap mt-8"
+      >
+        <!-- card html -->
+        <div
+          class="card bg-white rounded-lg shadow-lg p-6 m-4 w-32 hover:scale-110"
+        >
+          <img
+            src="assets/vscode.png"
+            alt="Vscode Logo"
+            class="w-16 h-16 mx-auto"
+          />
+          <h2 class="text-xl text-center mt-4 font-bold">VSCode</h2>
+        </div>
+        <!-- card css -->
+        <div
+          class="card bg-white rounded-lg shadow-lg p-6 m-4 w-32 hover:scale-110"
+        >
+          <img
+            src="assets/xampp.png"
+            alt="Xampp Logo"
+            class="w-16 h-16 mx-auto"
+          />
+          <h2 class="text-xl text-center mt-4 font-bold">XAMPP</h2>
+        </div>
+       
+        <!-- card php -->
+        <div
+          class="card bg-white rounded-lg shadow-lg p-6 m-4 w-32 hover:scale-110"
+        >
+          <img
+            src="assets/logo figma.png"
+            alt="Figma Logo"
+            class="w-16 h-16 mx-auto"
+          />
+          <h2 class="text-xl text-center mt-4 font-bold">Figma</h2>
+        </div>
+       
+        <!-- card github -->
+        <div
+          class="card bg-white rounded-lg shadow-lg p-6 m-4 w-32 hover:scale-110"
+        >
+          <img
+            src="assets/github.png"
+            alt="Github Logo"
+            class="w-16 h-16 mx-auto"
+          />
+          <h2 class="text-xl text-center mt-4 font-bold">Github</h2>
+        </div>
+        <!-- card laravel -->
+        <div
+          class="card bg-white rounded-lg shadow-lg p-6 m-4 w-32 hover:scale-110"
+        >
+          <img
+            src="assets/canva.jpg"
+            alt="Canva"
+            class="w-16 h-16 mx-auto"
+          />
+          <h2 class="text-xl text-center mt-4 font-bold">Canva</h2>
+        </div>
+
+      </div>
+    </section>
+    <!-- stacks section end -->
+
+    <!-- project section start -->
+    <section
+      class="project pt-40 justify-center items-center project-animation"
+      id="project"
+    >
+      <h1 class="text-2xl text-center text-gray-200 font-bold">
+        <i class="bi bi-lightbulb-fill"></i> My Project
+      </h1>
+      <p class="text-xl text-center text-gray-200 mt-4">
+        Here are some of the projects I have worked on
+      </p>
+      <div
+        class="project-card-container flex justify-center items-center flex-wrap mt-8"
+      >
+        <!-- Container untuk semua project card -->
+<div class="flex flex-wrap justify-center gap-4">
+  <!-- Card 1 -->
+  <div class="card bg-gradient-to-r from-green-100 to-teal-200 rounded-lg shadow-lg p-6 w-80 hover:scale-105 transition-transform duration-300">
+    <img src="assets/smpb.jpg" alt="Project 3" class="w-full h-48 object-cover rounded-lg" />
+    <div class="p-2">
+      <h2 class="text-xl font-bold text-gray-800">
+        Website Sistem Penerimaan Murid Baru (SPMB) di SMP Negeri 2 Kalijati Subang
+      </h2>
+      <p class="text-black mt-2 text-sm">
+        Mengembangkan sistem Penerimaan Murid Baru (SPMB) online yang digunakan oleh sekolah untuk mengelola proses pendaftaran, verifikasi berkas, dan pengumuman hasil seleksi secara otomatis melalui beberapa jalur: domisili, afirmasi, mutasi, dan prestasi.
+      </p>
+      <div class="tech flex flex-row mt-2 flex-wrap">
+        <span class="bg-blue-700 text-white rounded-lg p-1 text-sm mr-2 mb-1">Php</span>
+        <span class="bg-blue-700 text-white rounded-lg p-1 text-sm mr-2 mb-1">Laravel</span>
+        <span class="bg-blue-700 text-white rounded-lg p-1 text-sm mr-2 mb-1">Mysql</span>
+      </div>
+      <button class="bg-blue-700 rounded-lg border-2 border-white p-2 mt-4 w-full hover:bg-sky-500 transition-colors duration-300">
+        <a href="#" class="text-center text-gray-200">Check Repository</a>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card bg-gradient-to-r from-purple-300 to-fuchsia-600 rounded-lg shadow-lg p-6 w-80 hover:scale-105 transition-transform duration-300">
+    <img src="assets/dashboard 1.jpg" alt="SiNanas" class="w-full h-48 object-cover rounded-lg" />
+    <div class="p-2">
+      <h2 class="text-xl font-bold text-gray-800">
+        Sistem Informasi SiNanas Madu Kota Subang (Kategori Nanas Kupas) Berbasis Web
+      </h2>
+      <p class="text-black mt-2 text-sm">
+        Merancang dan mengembangkan sistem informasi berbasis web untuk manajemen data produksi dan distribusi nanas kupas. Sistem ini membantu pelaku UMKM dalam pendataan hasil panen, stok, serta pesanan pelanggan.
+      </p>
+      <div class="tech flex flex-row mt-2 flex-wrap">
+        <span class="bg-blue-700 text-white rounded-lg p-1 text-sm mr-2 mb-1">Php</span>
+        <span class="bg-blue-700 text-white rounded-lg p-1 text-sm mr-2 mb-1">Bootstrap</span>
+        <span class="bg-blue-700 text-white rounded-lg p-1 text-sm mr-2 mb-1">MySql</span>
+        <span class="bg-blue-700 text-white rounded-lg p-1 text-sm mr-2 mb-1">JavaScript</span>
+      </div>
+      <button class="bg-blue-700 rounded-lg border-2 border-white p-2 mt-4 w-full hover:bg-sky-500 transition-colors duration-300">
+        <a href="#" class="text-center text-gray-200">Check Repository</a>
+      </button>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card bg-gradient-to-r from-purple-300 to-fuchsia-600 rounded-lg shadow-lg p-6 w-80 hover:scale-105 transition-transform duration-300">
+    <img src="assets/WhatsApp Image 2024-07-03 at 17.15.59.jpg" alt="Vba" class="w-full h-48 object-cover rounded-lg" />
+    <div class="p-2">
+      <h2 class="text-xl font-bold text-gray-800">
+        Sistem Informasi Pengelolaan Pemasukan dan Pengeluaran Uang Berbasis Macro VBA – Terasahouse
+      </h2>
+      <p class="text-black mt-2 text-sm">
+        Membangun sistem keuangan sederhana menggunakan Microsoft Excel dan Macro VBA untuk mencatat serta menghitung pemasukan dan pengeluaran secara otomatis. Proyek ini fokus pada efisiensi pencatatan transaksi dan laporan keuangan harian.
+      </p>
+      <div class="tech flex flex-row mt-2 flex-wrap">
+        <span class="bg-blue-700 text-white rounded-lg p-1 text-sm mr-2 mb-1">VBA</span>
+        <span class="bg-blue-700 text-white rounded-lg p-1 text-sm mr-2 mb-1">Excel</span>
+        <span class="bg-blue-700 text-white rounded-lg p-1 text-sm mr-2 mb-1">Database</span>
+      </div>
+      <button class="bg-blue-700 rounded-lg border-2 border-white p-2 mt-4 w-full hover:bg-sky-500 transition-colors duration-300">
+        <a href="#" class="text-center text-gray-200">Check Repository</a>
+      </button>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+    <!-- projcet section end -->
+     <a href="..." class="mb-10">
+</a>
+<!-- skill section start -->
+<section class="py-16 px-6">
+  <div class="max-w-xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-white mb-10">Technical Skills</h2>
+
+    <!-- Skill Item -->
+    <div class="mb-6">
+      <p class="text-white font-semibold mb-1">HTML / CSS <span class="float-right">80%</span></p>
+      <div class="w-full bg-gray-200 rounded-full h-4">
+        <div class="bg-cyan-500 h-4 rounded-full" style="width: 80%"></div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <p class="text-white font-semibold mb-1">PHP <span class="float-right">70%</span></p>
+      <div class="w-full bg-gray-200 rounded-full h-4">
+        <div class="bg-cyan-500 h-4 rounded-full" style="width: 70%"></div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <p class="text-white font-semibold mb-1">Laravel <span class="float-right">70%</span></p>
+      <div class="w-full bg-gray-200 rounded-full h-4">
+        <div class="bg-cyan-500 h-4 rounded-full" style="width: 70%"></div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <p class="text-white font-semibold mb-1">MySQL <span class="float-right">80%</span></p>
+      <div class="w-full bg-gray-200 rounded-full h-4">
+        <div class="bg-cyan-500 h-4 rounded-full" style="width: 80%"></div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <p class="text-white font-semibold mb-1">UI/UX Design <span class="float-right">80%</span></p>
+      <div class="w-full bg-gray-200 rounded-full h-4">
+        <div class="bg-cyan-500 h-4 rounded-full" style="width: 80%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- skill section end -->
+
+
+
+
+    <!-- socials section start -->
+    <section
+      class="socials pt-40 justify-center items-center socials-animation"
+      id="socials"
+    >
+      <h1 class="text-2xl text-center text-gray-200 font-bold">
+        <i class="bi bi-telephone"></i> "Let's Connect"
+      </h1>
+      <div
+        class="flex flex-col justify-center items-center mt-4 max-w-4xl mx-auto"
+      >
+        <p class="text-xl text-center text-gray-200 mt-4">
+          Feel free to reach out to me through social media. Whether you have
+          questions, collaboration ideas, or just want to say hi, I'm always
+          happy to chat!
+        </p>
+      </div>
+      <!-- Social media -->
+      <div
+        class="socials-container flex flex-row justify-center items-center gap-4 mt-4 mb-4"
+      >
+       
+        <!-- Instagram -->
+        <div class="social-items text-gray-200 text-center w-[200px] gap-4">
+          <a href="https://www.instagram.com/fhrymlnaa?igsh=c25kMWFhMDk5ZnNi&utm_source=qr">
+            <i class="bi bi-instagram text-6xl hover:text-sky-400"> </i>
+          </a>
+          <p class="mt-2">fhrymlnaa</p>
+        </div>
+        
+        <!-- Gmail -->
+        <div class="social-items text-gray-200 text-center w-[200px] gap-4">
+          <i class="bi bi-envelope text-6xl hover:text-sky-400"></i>
+          <p class="mt-2">fahrymlna@gmail.com</p>
+        </div>
+      </div>
+      <div class="justify-center items-center flex mt-4 p-4">
+        <p class="text-gray-200 text-center text-xl">
+          Or you can contact me using form below
+        </p>
+      </div>
+      <!-- Form Kontak -->
+<div class="flex justify-center items-center">
+  <form
+    action="https://formspree.io/f/xkgbdgzr"
+    method="POST"
+    class="flex flex-col items-center"
+    id="contactForm"
+  >
+    <!-- Input Nama -->
+    <input
+      class="rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 p-2 mt-4 border-2 border-white text-white"
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+    />
+
+    <!-- Input Email -->
+    <input
+      class="rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 p-2 mt-4 border-2 border-white text-white"
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+    />
+
+    <!-- Pesan -->
+    <textarea
+      class="rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 p-2 mt-4 border-2 border-white text-white"
+      name="message"
+      cols="30"
+      rows="10"
+      placeholder="Put the message here"
+      required
+    ></textarea>
+
+    <!-- Tombol Kirim -->
+    <button
+      type="submit"
+      class="rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 border-2 border-white p-2 mt-4 text-gray-200"
+    >
+      Send
+    </button>
+
+    <!-- Pesan sukses -->
+    <p id="successMessage" class="text-green-500 mt-4 hidden">Pesan berhasil dikirim!</p>
+  </form>
+</div>
+
+    </section>
+    <!-- socials section end -->
+
+    <!-- footer section start -->
+    <footer class="footer text-center text-gray-200 p-4 mt-20">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+      <ul class="flex flex-row justify-center items-center gap-4 mt-4">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stacks">Stacks</a></li>
+        <li><a href="#project">My Project</a></li>
+        <li><a href="#socials">Socials</a></li>
+      </ul>
+      <div class="end-phase">
+        <p>&copy; 2025 Muhammad Fahry Maulana. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- js script -->
+    <script src="/portofolio/assets/script.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+
+    if (form) {
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: { Accept: "application/json" },
+        });
+
+        if (response.ok) {
+          successMessage.classList.remove("hidden");
+          form.reset();
+        } else {
+          successMessage.innerText = "Terjadi kesalahan. Coba lagi.";
+          successMessage.classList.remove("text-green-500");
+          successMessage.classList.add("text-red-500");
+          successMessage.classList.remove("hidden");
+        }
+      });
+    }
+  });
+</script>
+
+  </body>
+</html>
